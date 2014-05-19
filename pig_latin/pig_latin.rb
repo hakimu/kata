@@ -26,11 +26,11 @@ class PigLatin
 	end
 
 	def vowel_transalator
-		@vowel_sound = @word + "ay"
+		@word + "ay"
 	end
 
 	def consonant_transalator
-		@consonant_sound = @word[1..-1]+@word[0]+"ay"
+		@word[1..-1] + @word[0]+ "ay"
 	end
 
 end
