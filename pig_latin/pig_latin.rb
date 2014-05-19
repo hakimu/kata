@@ -5,7 +5,7 @@
 class PigLatin
 
 	def initialize(word)
-		@word = word
+		@word = word.downcase
 		@vowel = %w{a e i o u}
 	end
 
@@ -36,12 +36,14 @@ class PigLatin
 end
 
 
-x = PigLatin.new("egg")
-y = PigLatin.new("happy")
+x = PigLatin.new("EGg")
+y = PigLatin.new("HAPpy")
 d = PigLatin.new("duck")
 foo = PigLatin.new("apple")
+bar = PigLatin.new("Alanna")
 
 puts x.piggy
 puts y.piggy
-puts d.piggy
-puts foo.piggy
+# puts d.piggy
+# puts foo.piggy
+puts bar.piggy
